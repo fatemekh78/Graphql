@@ -78,7 +78,7 @@ function createXPGrowthChart(xpData) {
     for (let i = 0; i <= yGridLines; i++) {
         const yVal = (maxXP / yGridLines) * i;
         const yPos = yScale(yVal);
-        svg += `<line x1="0" y1="${yPos}" x2="${innerWidth}" y2="${yPos}" stroke="#eee" stroke-width="1"/>`;
+        svg += `<line x1="0" y1="${yPos}" x2="${innerWidth}" y2="${yPos}" stroke="#666" stroke-width="1"/>`;
         svg += `<text x="-5" y="${yPos + 4}" text-anchor="end" font-size="10" fill="#666">${formatXP(yVal)}</text>`;
     }
     
@@ -88,7 +88,7 @@ function createXPGrowthChart(xpData) {
         const date = new Date(minDate.getTime() + (i/xGridLines) * (maxDate - minDate));
         const xPos = xScale(date);
         const monthYear = `${monthNames[date.getMonth()]} ${date.getFullYear()}`;
-        svg += `<line x1="${xPos}" y1="0" x2="${xPos}" y2="${innerHeight}" stroke="#eee" stroke-width="1"/>`;
+        svg += `<line x1="${xPos}" y1="0" x2="${xPos}" y2="${innerHeight}" stroke="#666" stroke-width="1"/>`;
         svg += `<text x="${xPos}" y="${innerHeight + 15}" text-anchor="middle" font-size="10" fill="#666">${monthYear}</text>`;
     }
     
