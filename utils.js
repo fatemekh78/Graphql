@@ -48,13 +48,13 @@ function clearAllData() {
     document.getElementById('basic-information').innerHTML = '';
     
     // Clear audit history
-    document.getElementById('').innerHTML = '';
+    // document.getElementById('').innerHTML = '';
     
     // Clear charts
     document.getElementById('radar-chart').innerHTML = '';
     document.getElementById('linear-chart').innerHTML = '';
 
-    document.getElementById('username-or-email').innerText = '';
-    document.getElementById('password-login').innerText = '';
+    document.getElementById('username-or-email').value = '';
+    document.getElementById('password-login').value = ''; 
     document.getElementById('errorMessageLogin').innerHTML = '';
 }
