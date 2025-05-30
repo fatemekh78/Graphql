@@ -117,7 +117,7 @@ function createXPGrowthChart(xpData) {
     
     // Add axis labels
     svg += `<text x="${width/2}" y="${height - 10}" text-anchor="middle" font-size="12">Date</text>`;
-    svg += `<text x="10" y="${height/2}" text-anchor="middle" font-size="12" transform="rotate(-90, 10, ${height/2}) translate(0, -40)">Cumulative XP (in thousands)</text>`;
+    svg += `<text x="100" y="${height/2}" text-anchor="middle" font-size="12" transform="rotate(-90, 10, ${height/2}) translate(-90, 0)">Cumulative XP (in thousands)</text>`;
     
     svg += `</svg>`;
     return svg;
